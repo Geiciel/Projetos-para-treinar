@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #f2ebe3;
+    padding: 5px;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+}
+
+.ext {
+    max-width: 375px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 10%;
+    transition: 1s;
+}
+
+.foto {
+    background: url(images/image-product-mobile.jpg);
+    background-size: cover;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+@media screen and (max-width: 767px) {
+    .foto {
+        height: 250px;
+    }
+}
+
+.descricao {
+    padding: 7%;
+}
+
+.subt {
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 10px;
+    color: #6c7289;
+    
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+.desc {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #6c7289;
+    margin-bottom: 10px;
+    line-height: 25px;
+    font-size: 1.2rem;
+}
+
+.pre {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.pr1 {
+    font-size: 2rem;
+    font-family: "Fraunces", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #3c8067;
+    margin-right: 25px;
+}
+
+.pr2 {
+    margin-top: 10px;
+    color: #6c7289;
+}
+
+button {
+    border: 0px;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #3c8067;
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #2a5746;
+}
+
+@media screen and (min-width: 768px) {
+    .ext {
+        display: flex;
+        transition: 1s;
+        width: 600px;
+        max-width: none;
+    }
+
+    .foto {
+        background: url(images/image-product-desktop.jpg);
+        background-size: cover;
+        
+        width: 500px;
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    .descricao {
+        width: 470px;
+    }
+}
